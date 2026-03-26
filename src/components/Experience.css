@@ -1,6 +1,6 @@
 /* ===== Experience Section Styles ===== */
 .experience {
-  background: var(--bg-secondary);
+  background: transparent;
 }
 
 .experience-timeline-container {
@@ -31,7 +31,9 @@
   background: var(--accent-gradient);
   border-radius: 50%;
   z-index: 1;
-  box-shadow: 0 0 0 4px var(--bg-primary), 0 0 0 6px rgba(219, 39, 119, 0.3);
+  box-shadow:
+    0 0 0 4px var(--bg-primary),
+    0 0 0 6px rgba(219, 39, 119, 0.3);
 }
 
 .timeline-line {

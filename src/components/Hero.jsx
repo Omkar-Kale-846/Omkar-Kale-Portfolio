@@ -73,7 +73,12 @@ const Hero = () => {
             transition={{ delay: 0.6 }}
             className="hero-buttons"
           >
-            <a href="#" className="btn btn-primary">
+            <a
+              href="https://drive.google.com/drive/folders/197hiZQEM782cCknwqz4RNera485g9CTw?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn btn-primary"
+            >
               <Download size={18} />
               Download Resume
             </a>

@@ -1,6 +1,6 @@
 /* ===== Footer Styles ===== */
 .footer {
-  background: linear-gradient(to bottom, var(--bg-primary), #0c1929);
+  background: transparent;
   border-top: 1px solid var(--border-color);
   padding: 2rem 0;
 }
