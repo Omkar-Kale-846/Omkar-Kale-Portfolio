@@ -96,7 +96,7 @@ const Hero = () => {
             className="hero-socials"
           >
             <a
-              href="https://github.com/KaleOmkar846"
+              href="https://github.com/Omkar-Kale-846"
               target="_blank"
               rel="noopener noreferrer"
               className="hero-social-link"

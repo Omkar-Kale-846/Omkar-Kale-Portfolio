@@ -66,7 +66,7 @@ const Header = () => {
         {/* Social Links */}
         <div className="nav-social-links">
           <a
-            href="https://github.com/KaleOmkar846"
+            href="https://github.com/Omkar-Kale-846"
             target="_blank"
             rel="noopener noreferrer"
             className="nav-social-link"
@@ -123,7 +123,7 @@ const Header = () => {
           </ul>
           <div className="mobile-social-links">
             <a
-              href="https://github.com/KaleOmkar846"
+              href="https://github.com/Omkar-Kale-846"
               target="_blank"
               rel="noopener noreferrer"
               className="mobile-social-link"

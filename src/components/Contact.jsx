@@ -46,8 +46,8 @@ const Contact = () => {
     {
       name: "GitHub",
       icon: Github,
-      url: "https://github.com/KaleOmkar846",
-      username: "KaleOmkar846",
+      url: "https://github.com/Omkar-Kale-846",
+      username: "Omkar-Kale-846",
     },
   ];
 

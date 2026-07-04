@@ -26,7 +26,7 @@ const projects = [
     description:
       "An AI-powered platform for reporting emergencies via SMS with auto-triage and offline-capable route optimization for rescuers.",
     tech: ["Node.js", "React.js", "MongoDB", "Python", "AI"],
-    github: "https://github.com/KaleOmkar846/Disaster-Resource-Optimizer-AI",
+    github: "https://github.com/Omkar-Kale-846/Disaster-Resource-Optimizer-AI",
     demo: "#",
     images: [disasterImg1, disasterImg2],
   },
@@ -37,7 +37,7 @@ const projects = [
       "A job recommendation engine utilizing Transformer models to analyze resumes and connect candidates to ideal roles with compatibility insights.",
     tech: ["MERN Stack", "Transformer Models"],
     github:
-      "https://github.com/KaleOmkar846/SaralMatch-AI-Powered-Job-Recommendation-Engine",
+      "https://github.com/Omkar-Kale-846/SaralMatch-AI-Powered-Job-Recommendation-Engine",
     demo: "#",
     images: [saralMatchImg1, saralMatchImg2, saralMatchImg3],
   },
@@ -53,7 +53,7 @@ const ProjectCard = ({ project, index, isInView }) => {
 
     const interval = setInterval(() => {
       setCurrentImageIndex((prev) =>
-        prev === project.images.length - 1 ? 0 : prev + 1
+        prev === project.images.length - 1 ? 0 : prev + 1,
       );
     }, 3000);
 
@@ -63,14 +63,14 @@ const ProjectCard = ({ project, index, isInView }) => {
   const nextImage = (e) => {
     e.stopPropagation();
     setCurrentImageIndex((prev) =>
-      prev === project.images.length - 1 ? 0 : prev + 1
+      prev === project.images.length - 1 ? 0 : prev + 1,
     );
   };
 
   const prevImage = (e) => {
     e.stopPropagation();
     setCurrentImageIndex((prev) =>
-      prev === 0 ? project.images.length - 1 : prev - 1
+      prev === 0 ? project.images.length - 1 : prev - 1,
     );
   };
 
