@@ -8,6 +8,7 @@ const navLinks = [
   { name: "About", href: "#about" },
   { name: "Experience", href: "#experience" },
   { name: "Projects", href: "#projects" },
+  { name: "Hackathons", href: "#hackathons" },
   { name: "Leadership", href: "#leadership" },
   { name: "Contact", href: "#contact" },
 ];
@@ -34,7 +35,7 @@ const Header = () => {
       }
     };
 
-    window.addEventListener("scroll", handleScroll);
+    window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
@@ -45,7 +46,14 @@ const Header = () => {
       transition={{ duration: 0.6, delay: 0.2 }}
       className="header"
     >
-      <nav className="nav-pill">
+      <div className="header-inner">
+        <a href="#hero" className="header-logo" aria-label="Home">
+          <span className="logo-bracket">&lt;</span>
+          <span className="logo-text">OK</span>
+          <span className="logo-bracket">/&gt;</span>
+        </a>
+
+        <nav className="nav-pill">
         {/* Desktop Navigation */}
         <ul className="nav-links">
           {navLinks.map((link) => (
@@ -90,10 +98,12 @@ const Header = () => {
           className="mobile-menu-btn"
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           aria-label="Toggle menu"
+          aria-expanded={isMobileMenuOpen}
         >
           {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
       </nav>
+      </div>
 
       {/* Mobile Navigation */}
       {isMobileMenuOpen && (

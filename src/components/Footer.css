@@ -12,6 +12,7 @@
 }
 
 .footer-logo {
+  font-family: var(--font-mono);
   font-size: 1.75rem;
   font-weight: 700;
   display: flex;
@@ -48,17 +49,17 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(135deg, var(--accent-primary), #ff4d8f);
+  background: var(--accent-gradient);
   border: none;
   border-radius: 12px;
   color: white;
   cursor: pointer;
   transition: all var(--transition-fast);
-  box-shadow: 0 4px 15px rgba(219, 39, 119, 0.3);
+  box-shadow: 0 4px 15px var(--accent-30);
 }
 
 .scroll-to-top:hover {
-  box-shadow: 0 6px 20px rgba(219, 39, 119, 0.4);
+  box-shadow: 0 6px 20px var(--accent-40);
 }
 
 /* Responsive */

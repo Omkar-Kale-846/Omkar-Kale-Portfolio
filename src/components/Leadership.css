@@ -15,7 +15,7 @@
   border-radius: 16px;
   padding: 2rem;
   text-align: center;
-  transition: all 0.15s ease;
+  transition: all var(--transition-fast);
 }
 
 .leadership-card:hover {

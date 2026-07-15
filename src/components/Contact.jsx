@@ -9,6 +9,7 @@ import {
   MapPin,
   ArrowUpRight,
 } from "lucide-react";
+import SplitTitle from "./SplitTitle";
 import "./Contact.css";
 
 const Contact = () => {
@@ -25,8 +26,8 @@ const Contact = () => {
     {
       name: "Phone",
       icon: Phone,
-      value: "+91 98765 43210",
-      link: "tel:+919876543210",
+      value: "+91 80874 51784",
+      link: "tel:+918087451784",
     },
     {
       name: "Location",
@@ -62,9 +63,9 @@ const Contact = () => {
         >
           <span className="section-tag">
             <Mail size={16} />
-            Contact
+            {"<Contact />"}
           </span>
-          <h2 className="section-title">Get In Touch</h2>
+          <SplitTitle className="section-title">Get In Touch</SplitTitle>
         </motion.div>
 
         <motion.p
@@ -73,8 +74,9 @@ const Contact = () => {
           transition={{ duration: 0.5, delay: 0.1 }}
           className="contact-description"
         >
-          I'm currently looking for new opportunities. Whether you have a
-          question or just want to say hi, feel free to reach out!
+          I'm currently looking for new opportunities, so if you've got a
+          question, a project in mind, or just want to say hi, I'd love to
+          hear from you.
         </motion.p>
 
         <div className="contact-cards">

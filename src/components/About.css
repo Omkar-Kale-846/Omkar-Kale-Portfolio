@@ -34,6 +34,25 @@
   letter-spacing: 2px;
 }
 
+.tech-category {
+  margin-bottom: 1.75rem;
+}
+
+.tech-category:last-child {
+  margin-bottom: 0;
+}
+
+.tech-category-title {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-bottom: 1rem;
+}
+
 .tech-stack-grid {
   display: flex;
   flex-wrap: wrap;
@@ -115,7 +134,7 @@
   background: var(--accent-gradient);
   border-radius: 50%;
   z-index: 1;
-  box-shadow: 0 0 0 3px var(--bg-primary), 0 0 0 5px rgba(219, 39, 119, 0.3);
+  box-shadow: 0 0 0 3px var(--bg-primary), 0 0 0 5px var(--accent-30);
 }
 
 .education-line {
@@ -146,6 +165,7 @@
 }
 
 .education-year {
+  font-family: var(--font-mono);
   font-size: 0.75rem;
   font-weight: 500;
   color: var(--accent-primary);

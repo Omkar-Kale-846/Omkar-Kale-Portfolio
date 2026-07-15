@@ -33,7 +33,7 @@ const Footer = () => {
           >
             <p className="footer-credit">Designed & Built by Omkar Kale</p>
             <p className="footer-copyright">
-              © {currentYear} All rights reserved.
+              © {currentYear} Omkar Kale. All rights reserved.
             </p>
           </motion.div>
 

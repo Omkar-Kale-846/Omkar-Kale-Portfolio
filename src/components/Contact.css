@@ -39,7 +39,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(219, 39, 119, 0.1);
+  background: var(--accent-10);
   border-radius: 12px;
   color: var(--accent-primary);
   flex-shrink: 0;
@@ -117,11 +117,11 @@ a.contact-card-value:hover .arrow-icon {
 
 .social-card:hover {
   border-color: var(--accent-primary);
-  background: rgba(219, 39, 119, 0.08);
+  background: var(--accent-08);
   transform: translateY(-8px);
   box-shadow:
-    0 20px 40px rgba(219, 39, 119, 0.15),
-    0 0 0 1px rgba(219, 39, 119, 0.3);
+    0 20px 40px var(--accent-15),
+    0 0 0 1px var(--accent-30);
 }
 
 .social-card-icon {

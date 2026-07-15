@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
 import { Briefcase, Calendar } from "lucide-react";
+import SplitTitle from "./SplitTitle";
 import "./Experience.css";
 
 const experiences = [
@@ -11,18 +12,18 @@ const experiences = [
     company: "Edunet Foundation (AICTE & Shell)",
     date: "Jan 2025 – Feb 2025",
     details: [
-      "Developed a CNN-based Waste Classification Model for Green Tech goals.",
-      "Engineered end-to-end data pipelines for preprocessing and model training.",
+      "Built a CNN-based waste classification model for Green Tech initiatives, reaching 92% precision.",
+      "Engineered data pipelines to process 10,000+ images for model training and deployment.",
     ],
   },
   {
     id: 2,
-    role: "Front End Development Intern",
+    role: "Front-End Development Intern",
     company: "Edunet Foundation (AICTE)",
     date: "June 2024 – July 2024",
     details: [
-      "Engineered responsive UIs using React.js.",
-      "Contributed to the full SDLC and implemented modular code architecture.",
+      "Built responsive single-page apps in React, cutting page load time by 30% through optimized DOM handling.",
+      "Introduced reusable component architecture across the SDLC, cutting development time by 20%.",
     ],
   },
 ];
@@ -83,9 +84,9 @@ const Experience = () => {
         >
           <span className="section-tag">
             <Briefcase size={16} />
-            Experience
+            {"<Experience />"}
           </span>
-          <h2 className="section-title">My Journey</h2>
+          <SplitTitle className="section-title">My Journey</SplitTitle>
         </motion.div>
 
         <div className="experience-timeline-container">
