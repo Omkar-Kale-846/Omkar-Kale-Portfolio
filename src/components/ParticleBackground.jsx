@@ -1,10 +1,24 @@
 import { useEffect, useRef } from "react";
 import "./ParticleBackground.css";
 
+// Keep the accent color's RGB triplet in one place
+const ACCENT_RGB = "219, 39, 119";
+const MAX_PARTICLES = 160;
+
 const ParticleBackground = () => {
   const canvasRef = useRef(null);
 
   useEffect(() => {
+    const prefersReducedMotion = window.matchMedia(
+      "(prefers-reduced-motion: reduce)",
+    ).matches;
+
+    // Respect the OS-level reduced-motion setting: skip the animated
+    // background entirely instead of running an always-on canvas loop.
+    if (prefersReducedMotion) {
+      return;
+    }
+
     const canvas = canvasRef.current;
     const ctx = canvas.getContext("2d");
     let animationFrameId;
@@ -17,8 +31,9 @@ const ParticleBackground = () => {
 
     const createParticles = () => {
       particles = [];
-      const numberOfParticles = Math.floor(
-        (canvas.width * canvas.height) / 15000,
+      const numberOfParticles = Math.min(
+        Math.floor((canvas.width * canvas.height) / 15000),
+        MAX_PARTICLES,
       );
 
       for (let i = 0; i < numberOfParticles; i++) {
@@ -31,7 +46,9 @@ const ParticleBackground = () => {
           opacity: Math.random() * 0.5 + 0.2,
           // Pink tint matching the accent color
           color:
-            Math.random() > 0.7 ? "rgba(219, 39, 119," : "rgba(255, 255, 255,",
+            Math.random() > 0.7
+              ? `rgba(${ACCENT_RGB},`
+              : "rgba(255, 255, 255,",
         });
       }
     };
@@ -70,7 +87,9 @@ const ParticleBackground = () => {
             ctx.beginPath();
             ctx.moveTo(particle.x, particle.y);
             ctx.lineTo(otherParticle.x, otherParticle.y);
-            ctx.strokeStyle = `rgba(219, 39, 119, ${0.1 * (1 - distance / 120)})`;
+            ctx.strokeStyle = `rgba(${ACCENT_RGB}, ${
+              0.1 * (1 - distance / 120)
+            })`;
             ctx.lineWidth = 0.5;
             ctx.stroke();
           }
