@@ -41,14 +41,14 @@ const Contact = () => {
     {
       name: "LinkedIn",
       icon: Linkedin,
-      url: "https://www.linkedin.com/in/omkar-kale-948101287/",
-      username: "omkar-kale",
+      url: "https://www.linkedin.com/in/kale-omkar/",
+      username: "kale-omkar",
     },
     {
       name: "GitHub",
       icon: Github,
-      url: "https://github.com/Omkar-Kale-846",
-      username: "Omkar-Kale-846",
+      url: "https://github.com/kale-omkar/",
+      username: "kale-omkar",
     },
   ];
 

@@ -33,7 +33,7 @@ const projects = [
       { value: 40, prefix: "~", suffix: "%", label: "Faster Coordination" },
     ],
     tech: ["Node.js", "React.js", "MongoDB", "Python"],
-    github: "https://github.com/Omkar-Kale-846/Disaster-Resource-Optimizer-AI",
+    github: "https://github.com/kale-omkar/Disaster-Resource-Optimizer-AI",
     demo: "#",
     images: [disasterImg1, disasterImg2],
   },
@@ -54,7 +54,7 @@ const projects = [
       "Google GenAI",
     ],
     github:
-      "https://github.com/Omkar-Kale-846/SaralMatch-AI-Powered-Job-Recommendation-Engine",
+      "https://github.com/kale-omkar/SaralMatch-AI-Powered-Job-Recommendation-Engine",
     demo: "#",
     images: [saralMatchImg1, saralMatchImg2, saralMatchImg3],
   },

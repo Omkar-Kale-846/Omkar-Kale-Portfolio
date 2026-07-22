@@ -74,7 +74,7 @@ const Header = () => {
         {/* Social Links */}
         <div className="nav-social-links">
           <a
-            href="https://github.com/Omkar-Kale-846"
+            href="https://github.com/kale-omkar/"
             target="_blank"
             rel="noopener noreferrer"
             className="nav-social-link"
@@ -83,7 +83,7 @@ const Header = () => {
             <Github size={18} />
           </a>
           <a
-            href="https://www.linkedin.com/in/omkar-kale-948101287/"
+            href="https://www.linkedin.com/in/kale-omkar/"
             target="_blank"
             rel="noopener noreferrer"
             className="nav-social-link"
@@ -133,7 +133,7 @@ const Header = () => {
           </ul>
           <div className="mobile-social-links">
             <a
-              href="https://github.com/Omkar-Kale-846"
+              href="https://github.com/kale-omkar/"
               target="_blank"
               rel="noopener noreferrer"
               className="mobile-social-link"
@@ -142,7 +142,7 @@ const Header = () => {
               <Github size={20} />
             </a>
             <a
-              href="https://www.linkedin.com/in/omkar-kale-948101287/"
+              href="https://www.linkedin.com/in/kale-omkar/"
               target="_blank"
               rel="noopener noreferrer"
               className="mobile-social-link"

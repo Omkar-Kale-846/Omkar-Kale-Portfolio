@@ -101,7 +101,7 @@ const Hero = () => {
               className="hero-socials"
             >
               <a
-                href="https://github.com/Omkar-Kale-846"
+                href="https://github.com/kale-omkar/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hero-social-link"
@@ -110,7 +110,7 @@ const Hero = () => {
                 <Github size={22} />
               </a>
               <a
-                href="https://www.linkedin.com/in/omkar-kale-948101287/"
+                href="https://www.linkedin.com/in/kale-omkar/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hero-social-link"
